@@ -1,0 +1,7 @@
+# Références et liens utiles 
+
+[An Introduction to R](https://intro2r.com/)
+
+[Introduction à R par GRICAD Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données](https://formations_r.gricad-pages.univ-grenoble-alpes.fr/ced_intror/)
+
+[Série d’ateliers R du CSBQ](https://r.qcbs.ca/fr/workshops/)

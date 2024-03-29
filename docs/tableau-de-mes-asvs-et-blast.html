@@ -4,23 +4,22 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapitre 3 Tableau de mes ASVs et BLAST | BIO1410 - 2024 - Analyses R</title>
-  <meta name="description" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIO1410 - 2024 - Analyses R" />
+  <title>Chapitre 3 Tableau de mes ASVs et BLAST | BIA1401 - 2024 - Introduction à R</title>
+  <meta name="description" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIA1401 - 2024 - Introduction à R" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIO1410 - 2024 - Analyses R" />
+  <meta property="og:title" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIA1401 - 2024 - Introduction à R" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIO1410 - 2024 - Analyses R" />
+  <meta name="twitter:title" content="Chapitre 3 Tableau de mes ASVs et BLAST | BIA1401 - 2024 - Introduction à R" />
   
   
   
 
-<meta name="author" content="Karine Villeneuve" />
 
 
 
@@ -29,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction-à-r-studio-et-r-markdown.html"/>
-<link rel="next" href="traitement-des-fastqs.html"/>
+<link rel="prev" href="introduction-à-r-et-rstudio.html"/>
+<link rel="next" href="scripter-avec-rstudio.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -140,15 +139,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html"><i class="fa fa-check"></i><b>2</b> Introduction à R Studio et R Markdown</a>
+<li class="chapter" data-level="2" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html"><i class="fa fa-check"></i><b>2</b> Introduction à R et RStudio</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html#pourquoi-utiliser-r-markdown"><i class="fa fa-check"></i><b>2.1</b> Pourquoi utiliser R Markdown</a></li>
-<li class="chapter" data-level="2.2" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html#utliser-r-markdowm"><i class="fa fa-check"></i><b>2.2</b> Utliser R Markdowm</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html#bloc-de-codes"><i class="fa fa-check"></i><b>2.2.1</b> Bloc de codes</a></li>
-<li class="chapter" data-level="2.2.2" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html#définir-le-répertoire-de-travail-par-défault"><i class="fa fa-check"></i><b>2.2.2</b> Définir le répertoire de travail par défault</a></li>
-<li class="chapter" data-level="2.2.3" data-path="introduction-à-r-studio-et-r-markdown.html"><a href="introduction-à-r-studio-et-r-markdown.html#importer-des-données"><i class="fa fa-check"></i><b>2.2.3</b> Importer des données</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html#quest-ce-que-r-et-rstudio"><i class="fa fa-check"></i><b>2.1</b> Qu’est-ce que R et Rstudio</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html#composants-de-rstudio"><i class="fa fa-check"></i><b>2.2</b> Composants de RStudio</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="tableau-de-mes-asvs-et-blast.html"><a href="tableau-de-mes-asvs-et-blast.html"><i class="fa fa-check"></i><b>3</b> Tableau de mes ASVs et BLAST</a>
 <ul>
@@ -156,26 +150,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="tableau-de-mes-asvs-et-blast.html"><a href="tableau-de-mes-asvs-et-blast.html#obtenir-le-tableau-dabondance-de-mes-asvs-dans-excel"><i class="fa fa-check"></i><b>3.2</b> Obtenir le tableau d’abondance de mes ASVs dans Excel</a></li>
 <li class="chapter" data-level="3.3" data-path="tableau-de-mes-asvs-et-blast.html"><a href="tableau-de-mes-asvs-et-blast.html#blast"><i class="fa fa-check"></i><b>3.3</b> BLAST</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html"><i class="fa fa-check"></i><b>4</b> Traitement des fastqs</a>
+<li class="chapter" data-level="4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html"><i class="fa fa-check"></i><b>4</b> Scripter avec RStudio</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#pré-analyse"><i class="fa fa-check"></i><b>4.1</b> Pré-analyse</a></li>
-<li class="chapter" data-level="4.2" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#inspecter-la-qualité-filtrer-et-rogner"><i class="fa fa-check"></i><b>4.2</b> Inspecter la qualité, filtrer et rogner</a></li>
-<li class="chapter" data-level="4.3" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#retirer-les-erreurs-de-nucléotides"><i class="fa fa-check"></i><b>4.3</b> Retirer les erreurs de nucléotides</a></li>
-<li class="chapter" data-level="4.4" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#gnérer-la-matrice-dabondance-dasvs-par-échantillon"><i class="fa fa-check"></i><b>4.4</b> Gnérer la matrice d’abondance d’ASVs par échantillon</a></li>
-<li class="chapter" data-level="4.5" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#classification-taxonomique"><i class="fa fa-check"></i><b>4.5</b> Classification taxonomique</a></li>
-<li class="chapter" data-level="4.6" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#obtenir-les-séquences-dacides-nucléiques-adn"><i class="fa fa-check"></i><b>4.6</b> Obtenir les séquences d’acides nucléiques (ADN)</a></li>
-<li class="chapter" data-level="4.7" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#sauvegarder-les-résultats-en-format-comma-seperated-value-csv"><i class="fa fa-check"></i><b>4.7</b> Sauvegarder les résultats en format comma seperated value (csv)</a></li>
-<li class="chapter" data-level="4.8" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#raréfier"><i class="fa fa-check"></i><b>4.8</b> Raréfier</a></li>
-<li class="chapter" data-level="4.9" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#sauvegarder-les-résultats-en-format-comma-seperated-value-csv-1"><i class="fa fa-check"></i><b>4.9</b> Sauvegarder les résultats en format comma seperated value (csv)</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="statistiques.html"><a href="statistiques.html"><i class="fa fa-check"></i><b>5</b> Statistiques</a>
+<li class="chapter" data-level="4.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utliser-r-markdowm"><i class="fa fa-check"></i><b>4.1</b> Utliser R Markdowm</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="statistiques.html"><a href="statistiques.html#thème-pour-les-graphiques"><i class="fa fa-check"></i><b>5.1</b> Thème pour les graphiques</a></li>
-<li class="chapter" data-level="5.2" data-path="statistiques.html"><a href="statistiques.html#indice-de-shannon"><i class="fa fa-check"></i><b>5.2</b> Indice de Shannon</a></li>
-<li class="chapter" data-level="5.3" data-path="statistiques.html"><a href="statistiques.html#ordination-pcoa"><i class="fa fa-check"></i><b>5.3</b> Ordination (PCoA)</a></li>
-<li class="chapter" data-level="5.4" data-path="statistiques.html"><a href="statistiques.html#lefse"><i class="fa fa-check"></i><b>5.4</b> LEfSe</a></li>
-<li class="chapter" data-level="5.5" data-path="statistiques.html"><a href="statistiques.html#abondances-relatives"><i class="fa fa-check"></i><b>5.5</b> Abondances relatives</a></li>
+<li class="chapter" data-level="4.1.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#bloc-de-codes"><i class="fa fa-check"></i><b>4.1.1</b> Bloc de codes</a></li>
+<li class="chapter" data-level="4.1.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#définir-le-répertoire-de-travail-par-défault"><i class="fa fa-check"></i><b>4.1.2</b> Définir le répertoire de travail par défault</a></li>
+<li class="chapter" data-level="4.1.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-des-données"><i class="fa fa-check"></i><b>4.1.3</b> Importer des données</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html"><i class="fa fa-check"></i><b>5</b> Traitement des fastqs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#pré-analyse"><i class="fa fa-check"></i><b>5.1</b> Pré-analyse</a></li>
+<li class="chapter" data-level="5.2" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#inspecter-la-qualité-filtrer-et-rogner"><i class="fa fa-check"></i><b>5.2</b> Inspecter la qualité, filtrer et rogner</a></li>
+<li class="chapter" data-level="5.3" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#retirer-les-erreurs-de-nucléotides"><i class="fa fa-check"></i><b>5.3</b> Retirer les erreurs de nucléotides</a></li>
+<li class="chapter" data-level="5.4" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#gnérer-la-matrice-dabondance-dasvs-par-échantillon"><i class="fa fa-check"></i><b>5.4</b> Gnérer la matrice d’abondance d’ASVs par échantillon</a></li>
+<li class="chapter" data-level="5.5" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#classification-taxonomique"><i class="fa fa-check"></i><b>5.5</b> Classification taxonomique</a></li>
+<li class="chapter" data-level="5.6" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#obtenir-les-séquences-dacides-nucléiques-adn"><i class="fa fa-check"></i><b>5.6</b> Obtenir les séquences d’acides nucléiques (ADN)</a></li>
+<li class="chapter" data-level="5.7" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#sauvegarder-les-résultats-en-format-comma-seperated-value-csv"><i class="fa fa-check"></i><b>5.7</b> Sauvegarder les résultats en format comma seperated value (csv)</a></li>
+<li class="chapter" data-level="5.8" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#raréfier"><i class="fa fa-check"></i><b>5.8</b> Raréfier</a></li>
+<li class="chapter" data-level="5.9" data-path="traitement-des-fastqs.html"><a href="traitement-des-fastqs.html#sauvegarder-les-résultats-en-format-comma-seperated-value-csv-1"><i class="fa fa-check"></i><b>5.9</b> Sauvegarder les résultats en format comma seperated value (csv)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="installer-r-et-rstudio.html"><a href="installer-r-et-rstudio.html"><i class="fa fa-check"></i><b>6</b> Installer R et RStudio</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -188,7 +184,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIO1410 - 2024 - Analyses R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIA1401 - 2024 - Introduction à R</a>
           </h1>
         </div>
 
@@ -207,60 +203,60 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Exécuter les commandes en appuyant sur le bouton vert en haut à droite du bloc de code (<font color='green'> ▶ </font>).</p></li>
 </ol>
 <p>Bloc de code 1 : Installation des packages/libraires</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tableau-de-mes-asvs-et-blast.html#cb4-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;randomcoloR&quot;</span>)</span>
-<span id="cb4-2"><a href="tableau-de-mes-asvs-et-blast.html#cb4-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb4-3"><a href="tableau-de-mes-asvs-et-blast.html#cb4-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="tableau-de-mes-asvs-et-blast.html#cb1-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;randomcoloR&quot;</span>)</span>
+<span id="cb1-2"><a href="tableau-de-mes-asvs-et-blast.html#cb1-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
+<span id="cb1-3"><a href="tableau-de-mes-asvs-et-blast.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
 <p>Bloc de code 2 : Script pour obtenir vos données</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tableau-de-mes-asvs-et-blast.html#cb5-1" tabindex="-1"></a><span class="co"># Définir le nom de votre scientifique </span></span>
-<span id="cb5-2"><a href="tableau-de-mes-asvs-et-blast.html#cb5-2" tabindex="-1"></a>ma_scientifique <span class="ot">=</span> <span class="st">&quot;Abigail A. Salyers&quot;</span></span>
-<span id="cb5-3"><a href="tableau-de-mes-asvs-et-blast.html#cb5-3" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="tableau-de-mes-asvs-et-blast.html#cb5-4" tabindex="-1"></a><span class="co"># Importer le tableau de données</span></span>
-<span id="cb5-5"><a href="tableau-de-mes-asvs-et-blast.html#cb5-5" tabindex="-1"></a>tableau <span class="ot">=</span> <span class="fu">read.table</span>(<span class="at">file =</span> <span class="st">&quot;bio1410_2024.csv&quot;</span>, <span class="at">sep=</span><span class="st">&quot;,&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">check.names=</span><span class="cn">FALSE</span>) </span>
-<span id="cb5-6"><a href="tableau-de-mes-asvs-et-blast.html#cb5-6" tabindex="-1"></a><span class="co"># Définir le rang taxonomique d&#39;intérêt </span></span>
-<span id="cb5-7"><a href="tableau-de-mes-asvs-et-blast.html#cb5-7" tabindex="-1"></a>taxa_rank <span class="ot">=</span> <span class="st">&quot;Genus&quot;</span></span>
-<span id="cb5-8"><a href="tableau-de-mes-asvs-et-blast.html#cb5-8" tabindex="-1"></a><span class="co"># Extraire vos échantillons </span></span>
-<span id="cb5-9"><a href="tableau-de-mes-asvs-et-blast.html#cb5-9" tabindex="-1"></a>mes_échantillons <span class="ot">=</span> <span class="fu">subset</span>(tableau, Scientifique <span class="sc">==</span> ma_scientifique <span class="sc">&amp;</span> Abundance <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb5-10"><a href="tableau-de-mes-asvs-et-blast.html#cb5-10" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="tableau-de-mes-asvs-et-blast.html#cb5-11" tabindex="-1"></a><span class="co"># Afin de visualiser uniquementles 10 taxons les plus abondants on utilise ce qu&#39;on appelle une *for loop* ou boucle en français </span></span>
-<span id="cb5-12"><a href="tableau-de-mes-asvs-et-blast.html#cb5-12" tabindex="-1"></a>empt_df <span class="ot">=</span> <span class="fu">list</span>() <span class="co"># On génère une liste vide que l&#39;on viendra populer avec les résultats de la foor loop</span></span>
-<span id="cb5-13"><a href="tableau-de-mes-asvs-et-blast.html#cb5-13" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">0</span> <span class="co"># Ensuite on définit un premier itérateur (de type numérique) qui compte le nombre de loop effectué</span></span>
-<span id="cb5-14"><a href="tableau-de-mes-asvs-et-blast.html#cb5-14" tabindex="-1"></a><span class="co"># Début de la for loop</span></span>
-<span id="cb5-15"><a href="tableau-de-mes-asvs-et-blast.html#cb5-15" tabindex="-1"></a><span class="cf">for</span> (région_échantillonnée <span class="cf">in</span> <span class="fu">unique</span>(mes_échantillons<span class="sc">$</span>Region)){ <span class="co"># Cette séquence est le début de la loop où l&#39;itérateur de gauche (région) </span></span>
-<span id="cb5-16"><a href="tableau-de-mes-asvs-et-blast.html#cb5-16" tabindex="-1"></a>    i <span class="ot">=</span> i <span class="sc">+</span> <span class="dv">1</span>                                           <span class="co"># représente chaque item de l&#39;itérateur de droite (mes_échantillons$Région)</span></span>
-<span id="cb5-17"><a href="tableau-de-mes-asvs-et-blast.html#cb5-17" tabindex="-1"></a>    sample <span class="ot">=</span> <span class="fu">subset</span>(mes_échantillons, Region <span class="sc">==</span> région_échantillonnée) <span class="co"># Générer une nouvelle table de données basée sur la variable définit par l&#39;itérateur </span></span>
-<span id="cb5-18"><a href="tableau-de-mes-asvs-et-blast.html#cb5-18" tabindex="-1"></a>    total_abundance <span class="ot">=</span> <span class="fu">aggregate</span>(sample<span class="sc">$</span>Abundance, <span class="at">by =</span> <span class="fu">list</span>(<span class="at">taxa_rank =</span> sample[[taxa_rank]]), <span class="at">FUN =</span> sum) <span class="co"># Additionner ensemble les ASVs du même genres</span></span>
-<span id="cb5-19"><a href="tableau-de-mes-asvs-et-blast.html#cb5-19" tabindex="-1"></a>    top <span class="ot">=</span> <span class="fu">head</span>(total_abundance[<span class="fu">order</span>(total_abundance<span class="sc">$</span>x, <span class="at">decreasing =</span> T),], <span class="at">n =</span> <span class="dv">5</span>) <span class="co"># filtrer en order croissant pour identifer les 10 plus abondants</span></span>
-<span id="cb5-20"><a href="tableau-de-mes-asvs-et-blast.html#cb5-20" tabindex="-1"></a>    others_df <span class="ot">=</span> sample[<span class="sc">!</span>sample[[taxa_rank]] <span class="sc">%in%</span> top<span class="sc">$</span>taxa_rank,] <span class="co"># identifier les autres genres ne faisant pas partie des 10 plus abonants </span></span>
-<span id="cb5-21"><a href="tableau-de-mes-asvs-et-blast.html#cb5-21" tabindex="-1"></a>    others_list <span class="ot">=</span> others_df[[taxa_rank]] <span class="co"># extraire leur nom du tableau de données dans une liste  </span></span>
-<span id="cb5-22"><a href="tableau-de-mes-asvs-et-blast.html#cb5-22" tabindex="-1"></a>    sample[sample[[taxa_rank]] <span class="sc">%in%</span> others_list,][[taxa_rank]] <span class="ot">=</span> <span class="st">&quot;Autres&quot;</span> <span class="co"># Renommer leur genre pour Autres</span></span>
-<span id="cb5-23"><a href="tableau-de-mes-asvs-et-blast.html#cb5-23" tabindex="-1"></a>    empt_df[[i]] <span class="ot">=</span> sample <span class="co"># Enregistrer ce nouveau tableau </span></span>
-<span id="cb5-24"><a href="tableau-de-mes-asvs-et-blast.html#cb5-24" tabindex="-1"></a>}</span>
-<span id="cb5-25"><a href="tableau-de-mes-asvs-et-blast.html#cb5-25" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">do.call</span>(<span class="st">&quot;rbind&quot;</span>,empt_df) <span class="co"># Combiner les deux tables de données en une seule </span></span>
-<span id="cb5-26"><a href="tableau-de-mes-asvs-et-blast.html#cb5-26" tabindex="-1"></a></span>
-<span id="cb5-27"><a href="tableau-de-mes-asvs-et-blast.html#cb5-27" tabindex="-1"></a></span>
-<span id="cb5-28"><a href="tableau-de-mes-asvs-et-blast.html#cb5-28" tabindex="-1"></a><span class="co"># Maintenant que nous avons notre tableau de données avec seulement les 10 taxons les plus abondants sous la langue et la main</span></span>
-<span id="cb5-29"><a href="tableau-de-mes-asvs-et-blast.html#cb5-29" tabindex="-1"></a><span class="co"># nous pouvons commencer à travailler sur le graphique. On commence par générer une liste de couleurs associées à chacun des taxons</span></span>
-<span id="cb5-30"><a href="tableau-de-mes-asvs-et-blast.html#cb5-30" tabindex="-1"></a></span>
-<span id="cb5-31"><a href="tableau-de-mes-asvs-et-blast.html#cb5-31" tabindex="-1"></a>n <span class="ot">=</span> <span class="fu">nrow</span>(<span class="fu">data.frame</span>(<span class="fu">unique</span>(df<span class="sc">$</span>Genus))) <span class="co"># On calcule le nobre de genre unique que nous avons </span></span>
-<span id="cb5-32"><a href="tableau-de-mes-asvs-et-blast.html#cb5-32" tabindex="-1"></a>palette <span class="ot">=</span> randomcoloR<span class="sc">::</span><span class="fu">distinctColorPalette</span>(n) <span class="co"># On génère une nouvelle palette </span></span>
-<span id="cb5-33"><a href="tableau-de-mes-asvs-et-blast.html#cb5-33" tabindex="-1"></a>my_scale <span class="ot">=</span> ggplot2<span class="sc">::</span><span class="fu">scale_fill_manual</span>(<span class="at">name =</span> <span class="fu">as.character</span>(taxa_rank), <span class="at">values =</span> palette, <span class="at">na.translate =</span> <span class="cn">FALSE</span>, <span class="at">drop =</span> <span class="cn">TRUE</span>, <span class="at">limits =</span> force) <span class="co"># On assigne une couleur à chacun de nos genres uniques </span></span>
-<span id="cb5-34"><a href="tableau-de-mes-asvs-et-blast.html#cb5-34" tabindex="-1"></a></span>
-<span id="cb5-35"><a href="tableau-de-mes-asvs-et-blast.html#cb5-35" tabindex="-1"></a><span class="co"># Nous pouvons finalement générer le graphique </span></span>
-<span id="cb5-36"><a href="tableau-de-mes-asvs-et-blast.html#cb5-36" tabindex="-1"></a>graphique <span class="ot">=</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Region, <span class="at">weight =</span> Abundance, <span class="at">fill =</span> .data[[taxa_rank]])) <span class="sc">+</span></span>
-<span id="cb5-37"><a href="tableau-de-mes-asvs-et-blast.html#cb5-37" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> Region, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span></span>
-<span id="cb5-38"><a href="tableau-de-mes-asvs-et-blast.html#cb5-38" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
-<span id="cb5-39"><a href="tableau-de-mes-asvs-et-blast.html#cb5-39" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;Abondance relative (%)&quot;</span>) <span class="sc">+</span></span>
-<span id="cb5-40"><a href="tableau-de-mes-asvs-et-blast.html#cb5-40" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>)) <span class="sc">+</span></span>
-<span id="cb5-41"><a href="tableau-de-mes-asvs-et-blast.html#cb5-41" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb5-42"><a href="tableau-de-mes-asvs-et-blast.html#cb5-42" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>), <span class="at">strip.text.x =</span> <span class="fu">element_blank</span>(), </span>
-<span id="cb5-43"><a href="tableau-de-mes-asvs-et-blast.html#cb5-43" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">50</span>, <span class="dv">0</span>))) <span class="sc">+</span> </span>
-<span id="cb5-44"><a href="tableau-de-mes-asvs-et-blast.html#cb5-44" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">&quot;Genre&quot;</span>, <span class="at">title.position =</span> <span class="st">&quot;top&quot;</span>)) <span class="sc">+</span> </span>
-<span id="cb5-45"><a href="tableau-de-mes-asvs-et-blast.html#cb5-45" tabindex="-1"></a>  my_scale</span>
-<span id="cb5-46"><a href="tableau-de-mes-asvs-et-blast.html#cb5-46" tabindex="-1"></a></span>
-<span id="cb5-47"><a href="tableau-de-mes-asvs-et-blast.html#cb5-47" tabindex="-1"></a>graphique <span class="co"># visualiser le graphique produit </span></span>
-<span id="cb5-48"><a href="tableau-de-mes-asvs-et-blast.html#cb5-48" tabindex="-1"></a></span>
-<span id="cb5-49"><a href="tableau-de-mes-asvs-et-blast.html#cb5-49" tabindex="-1"></a><span class="co"># Enregistrer en format coma separeted value (csv) votre tableau d&#39;abondance </span></span>
-<span id="cb5-50"><a href="tableau-de-mes-asvs-et-blast.html#cb5-50" tabindex="-1"></a><span class="fu">write.csv</span>(df, <span class="st">&quot;df.csv&quot;</span>, <span class="at">quote=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="tableau-de-mes-asvs-et-blast.html#cb2-1" tabindex="-1"></a><span class="co"># Définir le nom de votre scientifique </span></span>
+<span id="cb2-2"><a href="tableau-de-mes-asvs-et-blast.html#cb2-2" tabindex="-1"></a>ma_scientifique <span class="ot">=</span> <span class="st">&quot;Abigail A. Salyers&quot;</span></span>
+<span id="cb2-3"><a href="tableau-de-mes-asvs-et-blast.html#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="tableau-de-mes-asvs-et-blast.html#cb2-4" tabindex="-1"></a><span class="co"># Importer le tableau de données</span></span>
+<span id="cb2-5"><a href="tableau-de-mes-asvs-et-blast.html#cb2-5" tabindex="-1"></a>tableau <span class="ot">=</span> <span class="fu">read.table</span>(<span class="at">file =</span> <span class="st">&quot;bio1410_2024.csv&quot;</span>, <span class="at">sep=</span><span class="st">&quot;,&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">check.names=</span><span class="cn">FALSE</span>) </span>
+<span id="cb2-6"><a href="tableau-de-mes-asvs-et-blast.html#cb2-6" tabindex="-1"></a><span class="co"># Définir le rang taxonomique d&#39;intérêt </span></span>
+<span id="cb2-7"><a href="tableau-de-mes-asvs-et-blast.html#cb2-7" tabindex="-1"></a>taxa_rank <span class="ot">=</span> <span class="st">&quot;Genus&quot;</span></span>
+<span id="cb2-8"><a href="tableau-de-mes-asvs-et-blast.html#cb2-8" tabindex="-1"></a><span class="co"># Extraire vos échantillons </span></span>
+<span id="cb2-9"><a href="tableau-de-mes-asvs-et-blast.html#cb2-9" tabindex="-1"></a>mes_échantillons <span class="ot">=</span> <span class="fu">subset</span>(tableau, Scientifique <span class="sc">==</span> ma_scientifique <span class="sc">&amp;</span> Abundance <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb2-10"><a href="tableau-de-mes-asvs-et-blast.html#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="tableau-de-mes-asvs-et-blast.html#cb2-11" tabindex="-1"></a><span class="co"># Afin de visualiser uniquementles 10 taxons les plus abondants on utilise ce qu&#39;on appelle une *for loop* ou boucle en français </span></span>
+<span id="cb2-12"><a href="tableau-de-mes-asvs-et-blast.html#cb2-12" tabindex="-1"></a>empt_df <span class="ot">=</span> <span class="fu">list</span>() <span class="co"># On génère une liste vide que l&#39;on viendra populer avec les résultats de la foor loop</span></span>
+<span id="cb2-13"><a href="tableau-de-mes-asvs-et-blast.html#cb2-13" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">0</span> <span class="co"># Ensuite on définit un premier itérateur (de type numérique) qui compte le nombre de loop effectué</span></span>
+<span id="cb2-14"><a href="tableau-de-mes-asvs-et-blast.html#cb2-14" tabindex="-1"></a><span class="co"># Début de la for loop</span></span>
+<span id="cb2-15"><a href="tableau-de-mes-asvs-et-blast.html#cb2-15" tabindex="-1"></a><span class="cf">for</span> (région_échantillonnée <span class="cf">in</span> <span class="fu">unique</span>(mes_échantillons<span class="sc">$</span>Region)){ <span class="co"># Cette séquence est le début de la loop où l&#39;itérateur de gauche (région) </span></span>
+<span id="cb2-16"><a href="tableau-de-mes-asvs-et-blast.html#cb2-16" tabindex="-1"></a>    i <span class="ot">=</span> i <span class="sc">+</span> <span class="dv">1</span>                                           <span class="co"># représente chaque item de l&#39;itérateur de droite (mes_échantillons$Région)</span></span>
+<span id="cb2-17"><a href="tableau-de-mes-asvs-et-blast.html#cb2-17" tabindex="-1"></a>    sample <span class="ot">=</span> <span class="fu">subset</span>(mes_échantillons, Region <span class="sc">==</span> région_échantillonnée) <span class="co"># Générer une nouvelle table de données basée sur la variable définit par l&#39;itérateur </span></span>
+<span id="cb2-18"><a href="tableau-de-mes-asvs-et-blast.html#cb2-18" tabindex="-1"></a>    total_abundance <span class="ot">=</span> <span class="fu">aggregate</span>(sample<span class="sc">$</span>Abundance, <span class="at">by =</span> <span class="fu">list</span>(<span class="at">taxa_rank =</span> sample[[taxa_rank]]), <span class="at">FUN =</span> sum) <span class="co"># Additionner ensemble les ASVs du même genres</span></span>
+<span id="cb2-19"><a href="tableau-de-mes-asvs-et-blast.html#cb2-19" tabindex="-1"></a>    top <span class="ot">=</span> <span class="fu">head</span>(total_abundance[<span class="fu">order</span>(total_abundance<span class="sc">$</span>x, <span class="at">decreasing =</span> T),], <span class="at">n =</span> <span class="dv">5</span>) <span class="co"># filtrer en order croissant pour identifer les 10 plus abondants</span></span>
+<span id="cb2-20"><a href="tableau-de-mes-asvs-et-blast.html#cb2-20" tabindex="-1"></a>    others_df <span class="ot">=</span> sample[<span class="sc">!</span>sample[[taxa_rank]] <span class="sc">%in%</span> top<span class="sc">$</span>taxa_rank,] <span class="co"># identifier les autres genres ne faisant pas partie des 10 plus abonants </span></span>
+<span id="cb2-21"><a href="tableau-de-mes-asvs-et-blast.html#cb2-21" tabindex="-1"></a>    others_list <span class="ot">=</span> others_df[[taxa_rank]] <span class="co"># extraire leur nom du tableau de données dans une liste  </span></span>
+<span id="cb2-22"><a href="tableau-de-mes-asvs-et-blast.html#cb2-22" tabindex="-1"></a>    sample[sample[[taxa_rank]] <span class="sc">%in%</span> others_list,][[taxa_rank]] <span class="ot">=</span> <span class="st">&quot;Autres&quot;</span> <span class="co"># Renommer leur genre pour Autres</span></span>
+<span id="cb2-23"><a href="tableau-de-mes-asvs-et-blast.html#cb2-23" tabindex="-1"></a>    empt_df[[i]] <span class="ot">=</span> sample <span class="co"># Enregistrer ce nouveau tableau </span></span>
+<span id="cb2-24"><a href="tableau-de-mes-asvs-et-blast.html#cb2-24" tabindex="-1"></a>}</span>
+<span id="cb2-25"><a href="tableau-de-mes-asvs-et-blast.html#cb2-25" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">do.call</span>(<span class="st">&quot;rbind&quot;</span>,empt_df) <span class="co"># Combiner les deux tables de données en une seule </span></span>
+<span id="cb2-26"><a href="tableau-de-mes-asvs-et-blast.html#cb2-26" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="tableau-de-mes-asvs-et-blast.html#cb2-27" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="tableau-de-mes-asvs-et-blast.html#cb2-28" tabindex="-1"></a><span class="co"># Maintenant que nous avons notre tableau de données avec seulement les 10 taxons les plus abondants sous la langue et la main</span></span>
+<span id="cb2-29"><a href="tableau-de-mes-asvs-et-blast.html#cb2-29" tabindex="-1"></a><span class="co"># nous pouvons commencer à travailler sur le graphique. On commence par générer une liste de couleurs associées à chacun des taxons</span></span>
+<span id="cb2-30"><a href="tableau-de-mes-asvs-et-blast.html#cb2-30" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="tableau-de-mes-asvs-et-blast.html#cb2-31" tabindex="-1"></a>n <span class="ot">=</span> <span class="fu">nrow</span>(<span class="fu">data.frame</span>(<span class="fu">unique</span>(df<span class="sc">$</span>Genus))) <span class="co"># On calcule le nobre de genre unique que nous avons </span></span>
+<span id="cb2-32"><a href="tableau-de-mes-asvs-et-blast.html#cb2-32" tabindex="-1"></a>palette <span class="ot">=</span> randomcoloR<span class="sc">::</span><span class="fu">distinctColorPalette</span>(n) <span class="co"># On génère une nouvelle palette </span></span>
+<span id="cb2-33"><a href="tableau-de-mes-asvs-et-blast.html#cb2-33" tabindex="-1"></a>my_scale <span class="ot">=</span> ggplot2<span class="sc">::</span><span class="fu">scale_fill_manual</span>(<span class="at">name =</span> <span class="fu">as.character</span>(taxa_rank), <span class="at">values =</span> palette, <span class="at">na.translate =</span> <span class="cn">FALSE</span>, <span class="at">drop =</span> <span class="cn">TRUE</span>, <span class="at">limits =</span> force) <span class="co"># On assigne une couleur à chacun de nos genres uniques </span></span>
+<span id="cb2-34"><a href="tableau-de-mes-asvs-et-blast.html#cb2-34" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="tableau-de-mes-asvs-et-blast.html#cb2-35" tabindex="-1"></a><span class="co"># Nous pouvons finalement générer le graphique </span></span>
+<span id="cb2-36"><a href="tableau-de-mes-asvs-et-blast.html#cb2-36" tabindex="-1"></a>graphique <span class="ot">=</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Region, <span class="at">weight =</span> Abundance, <span class="at">fill =</span> .data[[taxa_rank]])) <span class="sc">+</span></span>
+<span id="cb2-37"><a href="tableau-de-mes-asvs-et-blast.html#cb2-37" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> Region, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span></span>
+<span id="cb2-38"><a href="tableau-de-mes-asvs-et-blast.html#cb2-38" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb2-39"><a href="tableau-de-mes-asvs-et-blast.html#cb2-39" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;Abondance relative (%)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb2-40"><a href="tableau-de-mes-asvs-et-blast.html#cb2-40" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb2-41"><a href="tableau-de-mes-asvs-et-blast.html#cb2-41" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb2-42"><a href="tableau-de-mes-asvs-et-blast.html#cb2-42" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>), <span class="at">strip.text.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb2-43"><a href="tableau-de-mes-asvs-et-blast.html#cb2-43" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">50</span>, <span class="dv">0</span>))) <span class="sc">+</span> </span>
+<span id="cb2-44"><a href="tableau-de-mes-asvs-et-blast.html#cb2-44" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">&quot;Genre&quot;</span>, <span class="at">title.position =</span> <span class="st">&quot;top&quot;</span>)) <span class="sc">+</span> </span>
+<span id="cb2-45"><a href="tableau-de-mes-asvs-et-blast.html#cb2-45" tabindex="-1"></a>  my_scale</span>
+<span id="cb2-46"><a href="tableau-de-mes-asvs-et-blast.html#cb2-46" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="tableau-de-mes-asvs-et-blast.html#cb2-47" tabindex="-1"></a>graphique <span class="co"># visualiser le graphique produit </span></span>
+<span id="cb2-48"><a href="tableau-de-mes-asvs-et-blast.html#cb2-48" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="tableau-de-mes-asvs-et-blast.html#cb2-49" tabindex="-1"></a><span class="co"># Enregistrer en format coma separeted value (csv) votre tableau d&#39;abondance </span></span>
+<span id="cb2-50"><a href="tableau-de-mes-asvs-et-blast.html#cb2-50" tabindex="-1"></a><span class="fu">write.csv</span>(df, <span class="st">&quot;df.csv&quot;</span>, <span class="at">quote=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <div id="scientifiques" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Scientifiques<a href="tableau-de-mes-asvs-et-blast.html#scientifiques" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
@@ -410,8 +406,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="introduction-à-r-studio-et-r-markdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="traitement-des-fastqs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction-à-r-et-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="scripter-avec-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
