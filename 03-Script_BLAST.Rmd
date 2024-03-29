@@ -4,7 +4,7 @@ En traitement de données, les tableaux de données dans lequel vous cherchez ce
 
 Pour trouver vos séquences commencer par télécharger le fichier `séquences_inconnus.csv` et l'enregistrer dans le dossier `Documents`. Si vous enregistrer le document dans un autre dossier il vous faudra changer de répertoire de travail avec la fonction `setwd()`. Vous pouvez ensuite copier-collez ces commandes dans un nouveau script R. Suivant l'exécution de chacune des commandes vous devriez obtenir un fichier `mes_inconnus.csv` dans votre dossier de travail.  
 
-```{r}
+```{r, eval = FALSE}
 # Importer le fichier dans R 
 raw_df = read.csv("sequences_inconnus.csv", header = TRUE, sep = ",", check.name = FALSE)
 

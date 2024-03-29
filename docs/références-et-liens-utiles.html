@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapitre 4 Script pour BLAST | BIA1401 - 2024 - Introduction à R</title>
-  <meta name="description" content="Chapitre 4 Script pour BLAST | BIA1401 - 2024 - Introduction à R" />
+  <title>Chapitre 7 Références et liens utiles | BIA1401 - 2024 - Introduction à R</title>
+  <meta name="description" content="Chapitre 7 Références et liens utiles | BIA1401 - 2024 - Introduction à R" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 4 Script pour BLAST | BIA1401 - 2024 - Introduction à R" />
+  <meta property="og:title" content="Chapitre 7 Références et liens utiles | BIA1401 - 2024 - Introduction à R" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 4 Script pour BLAST | BIA1401 - 2024 - Introduction à R" />
+  <meta name="twitter:title" content="Chapitre 7 Références et liens utiles | BIA1401 - 2024 - Introduction à R" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="scripter-avec-rstudio.html"/>
-<link rel="next" href="r-markdown.html"/>
+<link rel="prev" href="installer-r-et-rstudio.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -182,20 +182,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="script-pour-blast" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapitre 4</span> Script pour BLAST<a href="script-pour-blast.html#script-pour-blast" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>En traitement de données, les tableaux de données dans lequel vous cherchez certaines informations peuvent comporter des milliers de lignes et plusieurs centaines de colonnes. Considérant la taille de ces fichiers, l’utilisation d’Excel n’est généralement pas possible. C’est donc pour cela que les analystes font appel à R.</p>
-<p>Pour trouver vos séquences commencer par télécharger le fichier <code>séquences_inconnus.csv</code> et l’enregistrer dans le dossier <code>Documents</code>. Si vous enregistrer le document dans un autre dossier il vous faudra changer de répertoire de travail avec la fonction <code>setwd()</code>. Vous pouvez ensuite copier-collez ces commandes dans un nouveau script R. Suivant l’exécution de chacune des commandes vous devriez obtenir un fichier <code>mes_inconnus.csv</code> dans votre dossier de travail.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="script-pour-blast.html#cb6-1" tabindex="-1"></a><span class="co"># Importer le fichier dans R </span></span>
-<span id="cb6-2"><a href="script-pour-blast.html#cb6-2" tabindex="-1"></a>raw_df <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&quot;sequences_inconnus.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;,&quot;</span>, <span class="at">check.name =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-3"><a href="script-pour-blast.html#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="script-pour-blast.html#cb6-4" tabindex="-1"></a><span class="co"># Pour filtrer un tableau de données nous utilisons la fonction subset. Nous indiquons le nom de la </span></span>
-<span id="cb6-5"><a href="script-pour-blast.html#cb6-5" tabindex="-1"></a><span class="co"># colonne dans laquelle nous voulons appliquer le filtre et quelles valeurs rechercher. Ici nous avons deux filtres de </span></span>
-<span id="cb6-6"><a href="script-pour-blast.html#cb6-6" tabindex="-1"></a><span class="co"># recherche et donc nous utilisons le symbole &amp; </span></span>
-<span id="cb6-7"><a href="script-pour-blast.html#cb6-7" tabindex="-1"></a><span class="co"># Indiquer entre le guillements le jour de votre laboratoire (Mardi, Mercredi ou Jeudi, avec majuscule) et votre numéro d&#39;équipe </span></span>
-<span id="cb6-8"><a href="script-pour-blast.html#cb6-8" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">subset</span>(raw_df, Laboratoire <span class="sc">==</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> Equipe <span class="sc">==</span> <span class="st">&quot;&quot;</span>)</span>
-<span id="cb6-9"><a href="script-pour-blast.html#cb6-9" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="script-pour-blast.html#cb6-10" tabindex="-1"></a><span class="fu">write.csv</span>(df, <span class="at">file =</span> <span class="st">&quot;mes_inconnus.csv&quot;</span>, <span class="at">quote =</span> <span class="cn">FALSE</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div id="références-et-liens-utiles" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapitre 7</span> Références et liens utiles<a href="références-et-liens-utiles.html#références-et-liens-utiles" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><a href="https://intro2r.com/">An Introduction to R</a></p>
+<p><a href="https://formations_r.gricad-pages.univ-grenoble-alpes.fr/ced_intror/">Introduction à R par GRICAD Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données</a></p>
+<p><a href="https://r.qcbs.ca/fr/workshops/">Série d’ateliers R du CSBQ</a></p>
 
 </div>
             </section>
@@ -203,8 +194,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="scripter-avec-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="r-markdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="installer-r-et-rstudio.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -235,7 +226,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Script_BLAST.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-Sources.Rmd",
 "text": "Edit"
 },
 "history": {

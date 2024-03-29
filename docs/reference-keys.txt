@@ -5,7 +5,7 @@ composants-de-rstudio
 scripter-avec-rstudio
 créer-un-script
 répertoire-de-travail
-format-dune-commande-r
+utiliser-des-fonctions-r
 commentaires
 importer-un-taleau-de-données
 script-pour-blast
@@ -13,3 +13,4 @@ r-markdown
 utliser-r-markdowm
 bloc-de-codes
 installer-r-et-rstudio
+références-et-liens-utiles

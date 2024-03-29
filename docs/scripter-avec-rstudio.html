@@ -148,7 +148,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#créer-un-script"><i class="fa fa-check"></i><b>3.1</b> Créer un script</a></li>
 <li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.2</b> Répertoire de travail</a></li>
-<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#format-dune-commande-r"><i class="fa fa-check"></i><b>3.3</b> Format d’une commande R</a></li>
+<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.3</b> Utiliser des fonctions R</a></li>
 <li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.4</b> Commentaires</a></li>
 <li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.5</b> Importer un taleau de données</a></li>
 </ul></li>
@@ -161,6 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="installer-r-et-rstudio.html"><a href="installer-r-et-rstudio.html"><i class="fa fa-check"></i><b>6</b> Installer R et RStudio</a></li>
+<li class="chapter" data-level="7" data-path="références-et-liens-utiles.html"><a href="références-et-liens-utiles.html"><i class="fa fa-check"></i><b>7</b> Références et liens utiles</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -203,11 +204,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.2</span> Répertoire de travail<a href="scripter-avec-rstudio.html#répertoire-de-travail" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Lorsque l’on demande à R d’importer un fichier, R recherche le nom du fichier qu’on lui a transmis dans le répertoire de travail (<em>Working Directory</em>, <strong>wd</strong>) actuellement défini, qui correspond au répertoire dans lequel R est actuellement en train de s’exécuter.</p>
 <ul>
-<li><p>Pour afficher le répertoire de travail actuel on utilise la commande <code>getwd()</code>.<br />
+<li><p>Pour afficher le répertoire de travail actuel on utilise la fonction <code>getwd()</code>.<br />
 </p></li>
 <li><p>Pour définir un répertoire de travail il existe plusieurs options :</p>
 <ul>
-<li>Utiliser la commande <code>setwd()</code> : on inscrit entre les parenthèses et entre guillemets le “chemin” vers le dossier.</li>
+<li>Utiliser la fonction <code>setwd()</code> : on inscrit entre les parenthèses et entre guillemets le “chemin” vers le dossier.</li>
 <li>Utiliser l’onglet <strong>Environnement</strong> : sélectionner un dossier ⇒ logo rouage (More) ⇒ <code>Set As Working Directory</code>.</li>
 <li>À partir de l’onglet <code>Session</code> : dans le menu déroulant sélectionner <code>Set Working Directory</code> ⇒ <code>Change directory</code>.</li>
 </ul></li>
@@ -219,32 +220,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>getwd()
 [1] &quot;/Users/votrenom/Documents&quot;</code></pre>
 </div>
-<div id="format-dune-commande-r" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Format d’une commande R<a href="scripter-avec-rstudio.html#format-dune-commande-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="utiliser-des-fonctions-r" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Utiliser des fonctions R<a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Le nom d’une fonction dans R est toujours suivi d’une paire de parenthèses même s’il n’y a rien de contenu entre les parenthèses (pensez à <code>getwd()</code>). Le ou les arguments d’une fonction sont placés entre parenthèses et séparés par des virgules. Vous pouvez considérer un argument comme un moyen de personnaliser l’utilisation ou le comportement d’une fonction. Enfin, l’un des principaux défis de R est de savoir quelle fonction utiliser pour une tâche particulière et comment l’utiliser. Heureusement, chaque fonction est toujours associée à un document d’aide qui explique comment utiliser la fonction (une recherche rapide sur Google vous aidera également généralement). Pour trouver de l’aide sur une fonction le point d’interrogation peut être utilisé.</p>
+<p>Exemple :</p>
+<pre><code>?getwd()</code></pre>
 </div>
 <div id="commentaires" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Commentaires<a href="scripter-avec-rstudio.html#commentaires" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Le symbole “#” est utilisé insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole “#” lors de l’exécution de commandes. Considérant que</p>
-<p>Puisque les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes ou d’indiquer à des collaborateurs ce qui a été fait. Un script enrichi de commentaires est une bonne façon de collaborer à une science reproductible et permet de comprendre comment R fonctionne.</p>
+<p>Le symbole “#” est utilisé insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole “#” lors de l’exécution de commandes. Considérant que les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes indiquant ce qui a été fait. Un script enrichi de commentaires est une excellente façon de collaborer à une science reproductible.</p>
+<p>Exemple :</p>
+<pre><code># J&#39;utilise la commde getwd() pour obtenir mon répertoire de travail 
+getwd()</code></pre>
 </div>
 <div id="importer-un-taleau-de-données" class="section level2 hasAnchor" number="3.5">
 <h2><span class="header-section-number">3.5</span> Importer un taleau de données<a href="scripter-avec-rstudio.html#importer-un-taleau-de-données" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Un tableau de données est une liste de vecteurs (de même taille) rangés colonne par colonne. Chaque colonne du tableau correspond à une variable, chaque ligne à une observation. Les variables peuvent être de type différent (numérique, booléen, character, …). Sous R, les tableaux de données sont des objets particuliers appelés data.frame.</p>
 <p>En analayse de données, les fichiers sont typiquement enregistrer sous le format <em>Comma Seperated Value</em> (csv). CSV est un format de fichier de texte simple utilisé pour stocker les données tabulaires, comme des feuilles de calcul ou des bases de données. Chaque ligne d’un fichier CSV représente une ligne et les valeurs d’une ligne sont séparées par des virgules. C’est un format de fichier simple et largement pris en charge qui permet d’importer et d’exporter facilement des données entre différentes applications logicielles.</p>
-<p>Pour importer ce type de fichier dans R on utilise la commande <code>read.csv</code> avec les arguments suivants :</p>
+<p>Pour importer ce type de fichier dans R on peut utiliser la fonction <code>read.csv</code>. Les arguments fréquemments utilisés pour cette fonction sont les suivants :</p>
 <ul>
-<li><code>file</code> : Spécifier le nom du fichier</li>
-<li><code>header</code> : Indiquer si la première ligne de notre tableau correspond au nom des colonnes (valeurs possible TRUE/FALSE)</li>
-<li><code>row.names</code> : Indiquer quelle colone de notre tableau correspond au nom des rangés</li>
-<li><code>sep</code> : Indiquer quel caractère doit servir de séparateur pour les colonnes</li>
+<li><code>file</code> : Spécifier le nom du fichier (inclure l’extension)</li>
+<li><code>header</code> : Indiquer si la première ligne de notre tableau correspond au nom des colonnes (valeurs possibles TRUE/FALSE)</li>
+<li><code>row.names</code> : Indiquer quelle colone de notre tableau correspond au nom des rangés (valeurs possible = le numéro de la colonne)</li>
+<li><code>sep</code> : Indiquer quel caractère doit servir de séparateur pour les colonnes (il peut arriver que d’autre symbole tels que le point-virgule servent de séparateur plutôt que la virgule)</li>
 <li><code>check.name</code> : Ne pas systématiquement remplacer le trait d’union par un point (valeurs possible TRUE/FALSE)</li>
 </ul>
+<p>Exemple :</p>
 <pre><code>df = read.csv(file = &quot;nom_fichier.csv&quot;, header = TRUE, row.names = 1, sep = &quot;,&quot;, check.names = FALSE)  </code></pre>
 <p>Pour un tableau en format <em>tab delimited</em> on peut utiliser la fonction <code>read.table</code> et spécifier <code>\t</code> comme séparateur.</p>
-<p>Pour obtenir les attributs d’un objet, on utilise la fonction attributes(). Les attributs d’un data-frame sont le nom des variables (names), le nom des individus (row.names), les dimensions du tableau, le nombre des lignes et des colonnes.</p>
-<p>Pour accéder à la valeur de ces attributs, on utilise attr(<objet>, &lt;le nom de l’attribut&gt;).</p>
-<p>La fonction dim() fournit les dimensions du tableau de données: le nombre d’observations et le nombre de variables.</p>
-<p>La fonction dimnames() fournit le nom des dimensions du tableau de données: le nom des individus et le nom des variables</p>
 
 </div>
 </div>
