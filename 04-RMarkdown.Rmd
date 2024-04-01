@@ -1,6 +1,6 @@
 # R Markdown
 
-Plusieurs préfèrent rédiger leurs scripts dans des fichiers de type R Markdown plutôt que R Script pour diverses raions. Je recommande personnellement d'utiliser R Markdown pour les raisons suivantes : 
+Certains préfèrent rédiger leurs scripts dans des fichiers de type R Markdown plutôt que R Script pour diverses raions, notamment : 
 
 - Ce type de fichier permet de facilement annoter son script entre les sections de codes qui sont comprises dans un bloc ("chunk" en anglais).
 
@@ -12,10 +12,9 @@ Plusieurs préfèrent rédiger leurs scripts dans des fichiers de type R Markdow
 
 ## Utliser R Markdowm
 
-La première étape consiste donc à créer un nouveau document de type R Mardown. Pour cela, ouvrez RStudio, puis cliquez sur `Fichier`. Dans le menu déroulant sélectionner `Nouveau Fichier` puis `R Markdown...`. 
+Pour créer un fichier de type R Markdown sélectionner ce type de fichier plutôt que R Script dans le menu déroulant pour créer un nouveau fichier. 
 
-Dans la nouvelle fenêtre vous pouvez donner le titre que vous voulez à votre nouveau document. 
-Par défault le nouveau document affiche une petite introduction ainsi que des exemples tel que sur l'image ci-dessous : 
+Dans la nouvelle fenêtre qui s'ouvrira vous pouvez donner le titre que vous voulez à votre nouveau document puis sélectionner `Ok`.Par défault le nouveau document affiche une petite introduction ainsi que des exemples tel que sur l'image ci-dessous : 
 
 ```{r echo=FALSE, out.width = "100%", fig.align = "center", out.lenght = "100%"}
 knitr::include_graphics("data/rmarkdown.png")

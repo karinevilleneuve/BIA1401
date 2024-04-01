@@ -147,10 +147,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html"><i class="fa fa-check"></i><b>3</b> Scripter avec RStudio</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#créer-un-script"><i class="fa fa-check"></i><b>3.1</b> Créer un script</a></li>
-<li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.2</b> Répertoire de travail</a></li>
-<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.3</b> Utiliser des fonctions R</a></li>
-<li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.4</b> Commentaires</a></li>
-<li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.5</b> Importer un taleau de données</a></li>
+<li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#exécuter-une-commande"><i class="fa fa-check"></i><b>3.2</b> Exécuter une commande</a></li>
+<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.3</b> Répertoire de travail</a></li>
+<li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.4</b> Utiliser des fonctions R</a></li>
+<li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.5</b> Commentaires</a></li>
+<li class="chapter" data-level="3.6" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.6</b> Importer un taleau de données</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="script-pour-blast.html"><a href="script-pour-blast.html"><i class="fa fa-check"></i><b>4</b> Script pour BLAST</a></li>
 <li class="chapter" data-level="5" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>5</b> R Markdown</a>
@@ -184,8 +185,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="scripter-avec-rstudio" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapitre 3</span> Scripter avec RStudio<a href="scripter-avec-rstudio.html#scripter-avec-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Avant de débuter voici quelques bonnes pratiques du code R :</p>
-<p><strong>Nom des variables </strong>:</p>
+<p>Avant de débuter voici quelques bonnes pratiques et astuces du code R :</p>
+<p><strong>Nom des variables</strong>:</p>
 <ul>
 <li>Autant que possible, utiliser des noms courts et explicites pour vos variables. Nommer une variable <code>var</code> n’est pas très instructif.</li>
 <li>Utilisez un trait de soulignement <code>_</code> pour séparer les mots d’un nom ou essayez d’être constant!</li>
@@ -196,12 +197,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Ajoutez des espaces autour de tous les opérateurs (<code>=</code>, <code>+</code>, <code>-</code>, <code>&lt;-</code>, etc.) pour rendre le code plus lisible</li>
 <li>Mettez un espace après une virgule, mais jamais avant (comme en français).</li>
 </ul>
+<p><strong>Valeurs de vos tableaux de données</strong></p>
+<p>Les noms des colonnes et leur contenu n’ont ni accent, ni d’espace, ni caractères spéciaux puisque R préfère une seule suite de caractères comme titre. Par exemple, pour “Nombre d’espèces” il est préférable d’utiliser la forme “num_sp”.</p>
+<p><strong>Autre</strong></p>
+<p>La touche <code>Tabulation</code> ou <code>Tab</code> permet de compléter automatiquement les noms d’objets/fonction. Çela accélère l’entrée des commandes et évite les erreurs de frappe.</p>
 <div id="créer-un-script" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Créer un script<a href="scripter-avec-rstudio.html#créer-un-script" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Lorsque vous lancez RStudio, le premier élément que vous voyez à gauche de l’écran correspond à la console. Pour créer un nouveau script vous devez cliquez sur l’icone de la page blanche avec le symbole <code>+</code> vert en haut à gauche complètement. Dans le menu déroulant sélectionner <code>R Script</code>. La section <a href="r-markdown.html#r-markdown">R Markdown</a> aborde une différentes manière de rédiger ses scripts favorisant l’annotation et l’organisation du code en plus de l’exportation des scripts sous différents formats (PDF, HTML, etc.) pour le partage des scripts.</p>
 </div>
-<div id="répertoire-de-travail" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Répertoire de travail<a href="scripter-avec-rstudio.html#répertoire-de-travail" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exécuter-une-commande" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Exécuter une commande<a href="scripter-avec-rstudio.html#exécuter-une-commande" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Déplacez votre curseur sur la ligne que vous voulez exécuter puis cliquer sur le bouton <code>run</code> en haut à gauche. Vous pouvez aussi sélectionner plusieurs lignes à la fois. Le raccourcit clavier est <code>Alt</code> + <code>Enter</code> pour les utilisateurs Windows et <code>Command</code> + <code>Enter</code> pour les utilisateurs Mac.</p>
+</div>
+<div id="répertoire-de-travail" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Répertoire de travail<a href="scripter-avec-rstudio.html#répertoire-de-travail" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Lorsque l’on demande à R d’importer un fichier, R recherche le nom du fichier qu’on lui a transmis dans le répertoire de travail (<em>Working Directory</em>, <strong>wd</strong>) actuellement défini, qui correspond au répertoire dans lequel R est actuellement en train de s’exécuter.</p>
 <ul>
 <li><p>Pour afficher le répertoire de travail actuel on utilise la fonction <code>getwd()</code>.<br />
@@ -220,21 +229,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>getwd()
 [1] &quot;/Users/votrenom/Documents&quot;</code></pre>
 </div>
-<div id="utiliser-des-fonctions-r" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Utiliser des fonctions R<a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="utiliser-des-fonctions-r" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Utiliser des fonctions R<a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Le nom d’une fonction dans R est toujours suivi d’une paire de parenthèses même s’il n’y a rien de contenu entre les parenthèses (pensez à <code>getwd()</code>). Le ou les arguments d’une fonction sont placés entre parenthèses et séparés par des virgules. Vous pouvez considérer un argument comme un moyen de personnaliser l’utilisation ou le comportement d’une fonction. Enfin, l’un des principaux défis de R est de savoir quelle fonction utiliser pour une tâche particulière et comment l’utiliser. Heureusement, chaque fonction est toujours associée à un document d’aide qui explique comment utiliser la fonction (une recherche rapide sur Google vous aidera également généralement). Pour trouver de l’aide sur une fonction le point d’interrogation peut être utilisé.</p>
 <p>Exemple :</p>
 <pre><code>?getwd()</code></pre>
 </div>
-<div id="commentaires" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Commentaires<a href="scripter-avec-rstudio.html#commentaires" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="commentaires" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Commentaires<a href="scripter-avec-rstudio.html#commentaires" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Le symbole “#” est utilisé insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole “#” lors de l’exécution de commandes. Considérant que les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes indiquant ce qui a été fait. Un script enrichi de commentaires est une excellente façon de collaborer à une science reproductible.</p>
 <p>Exemple :</p>
 <pre><code># J&#39;utilise la commde getwd() pour obtenir mon répertoire de travail 
 getwd()</code></pre>
 </div>
-<div id="importer-un-taleau-de-données" class="section level2 hasAnchor" number="3.5">
-<h2><span class="header-section-number">3.5</span> Importer un taleau de données<a href="scripter-avec-rstudio.html#importer-un-taleau-de-données" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="importer-un-taleau-de-données" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Importer un taleau de données<a href="scripter-avec-rstudio.html#importer-un-taleau-de-données" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Un tableau de données est une liste de vecteurs (de même taille) rangés colonne par colonne. Chaque colonne du tableau correspond à une variable, chaque ligne à une observation. Les variables peuvent être de type différent (numérique, booléen, character, …). Sous R, les tableaux de données sont des objets particuliers appelés data.frame.</p>
 <p>En analayse de données, les fichiers sont typiquement enregistrer sous le format <em>Comma Seperated Value</em> (csv). CSV est un format de fichier de texte simple utilisé pour stocker les données tabulaires, comme des feuilles de calcul ou des bases de données. Chaque ligne d’un fichier CSV représente une ligne et les valeurs d’une ligne sont séparées par des virgules. C’est un format de fichier simple et largement pris en charge qui permet d’importer et d’exporter facilement des données entre différentes applications logicielles.</p>
 <p>Pour importer ce type de fichier dans R on peut utiliser la fonction <code>read.csv</code>. Les arguments fréquemments utilisés pour cette fonction sont les suivants :</p>

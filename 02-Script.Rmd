@@ -1,9 +1,8 @@
-
 # Scripter avec RStudio
 
-Avant de débuter voici quelques bonnes pratiques du code R : 
+Avant de débuter voici quelques bonnes pratiques et astuces du code R : 
 
-**Nom des variables **:
+**Nom des variables**:
 
 - Autant que possible, utiliser des noms courts et explicites pour vos variables. Nommer une variable `var` n’est pas très instructif.
 - Utilisez un trait de soulignement `_` pour séparer les mots d’un nom ou essayez d’être constant!
@@ -15,9 +14,21 @@ Avant de débuter voici quelques bonnes pratiques du code R :
 - Mettez un espace après une virgule, mais jamais avant (comme en français).
 
 
+**Valeurs de vos tableaux de données**
+
+Les noms des colonnes et leur contenu n’ont ni accent, ni d’espace, ni caractères spéciaux puisque R préfère une seule suite de caractères comme titre. Par exemple, pour "Nombre d’espèces" il est préférable d'utiliser la forme "num_sp". 
+
+**Autre** 
+
+La touche `Tabulation` ou `Tab` permet de compléter automatiquement les noms d’objets/fonction. Çela accélère l’entrée des commandes et évite les erreurs de frappe.
+
 ## Créer un script 
 
 Lorsque vous lancez RStudio, le premier élément que vous voyez à gauche de l’écran correspond à la console. Pour créer un nouveau script vous devez cliquez sur l'icone de la page blanche avec le symbole `+` vert en haut à gauche complètement. Dans le menu déroulant sélectionner `R Script`. La section [R Markdown] aborde une différentes manière de rédiger ses scripts favorisant l'annotation et l'organisation du code en plus de l'exportation des scripts sous différents formats (PDF, HTML, etc.) pour le partage des scripts.
+
+## Exécuter une commande 
+
+Déplacez votre curseur sur la ligne que vous voulez exécuter puis cliquer sur le bouton `run` en haut à gauche. Vous pouvez aussi sélectionner plusieurs lignes à la fois. Le raccourcit clavier est `Alt` + `Enter` pour les utilisateurs Windows et `Command` + `Enter` pour les utilisateurs Mac. 
 
 ## Répertoire de travail
 
@@ -52,8 +63,6 @@ Exemple  :
 ```
 ?getwd()
 ```
-
-
 ## Commentaires 
 
 Le symbole "#" est utilisé insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole "#" lors de l’exécution de commandes. Considérant que les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes indiquant ce qui a été fait. Un script enrichi de commentaires est une excellente façon de collaborer à une science reproductible. 
@@ -86,4 +95,5 @@ df = read.csv(file = "nom_fichier.csv", header = TRUE, row.names = 1, sep = ",",
 ```
 
 Pour un tableau en format *tab delimited* on peut utiliser la fonction `read.table` et spécifier `\t` comme séparateur. 
+
 

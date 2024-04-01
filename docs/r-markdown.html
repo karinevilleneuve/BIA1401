@@ -147,10 +147,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html"><i class="fa fa-check"></i><b>3</b> Scripter avec RStudio</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#créer-un-script"><i class="fa fa-check"></i><b>3.1</b> Créer un script</a></li>
-<li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.2</b> Répertoire de travail</a></li>
-<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.3</b> Utiliser des fonctions R</a></li>
-<li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.4</b> Commentaires</a></li>
-<li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.5</b> Importer un taleau de données</a></li>
+<li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#exécuter-une-commande"><i class="fa fa-check"></i><b>3.2</b> Exécuter une commande</a></li>
+<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.3</b> Répertoire de travail</a></li>
+<li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.4</b> Utiliser des fonctions R</a></li>
+<li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.5</b> Commentaires</a></li>
+<li class="chapter" data-level="3.6" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.6</b> Importer un taleau de données</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="script-pour-blast.html"><a href="script-pour-blast.html"><i class="fa fa-check"></i><b>4</b> Script pour BLAST</a></li>
 <li class="chapter" data-level="5" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>5</b> R Markdown</a>
@@ -184,7 +185,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="r-markdown" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">Chapitre 5</span> R Markdown<a href="r-markdown.html#r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Plusieurs préfèrent rédiger leurs scripts dans des fichiers de type R Markdown plutôt que R Script pour diverses raions. Je recommande personnellement d’utiliser R Markdown pour les raisons suivantes :</p>
+<p>Certains préfèrent rédiger leurs scripts dans des fichiers de type R Markdown plutôt que R Script pour diverses raions, notamment :</p>
 <ul>
 <li><p>Ce type de fichier permet de facilement annoter son script entre les sections de codes qui sont comprises dans un bloc (“chunk” en anglais).</p>
 <ul>
@@ -195,9 +196,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div id="utliser-r-markdowm" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Utliser R Markdowm<a href="r-markdown.html#utliser-r-markdowm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>La première étape consiste donc à créer un nouveau document de type R Mardown. Pour cela, ouvrez RStudio, puis cliquez sur <code>Fichier</code>. Dans le menu déroulant sélectionner <code>Nouveau Fichier</code> puis <code>R Markdown...</code>.</p>
-<p>Dans la nouvelle fenêtre vous pouvez donner le titre que vous voulez à votre nouveau document.
-Par défault le nouveau document affiche une petite introduction ainsi que des exemples tel que sur l’image ci-dessous :</p>
+<p>Pour créer un fichier de type R Markdown sélectionner ce type de fichier plutôt que R Script dans le menu déroulant pour créer un nouveau fichier.</p>
+<p>Dans la nouvelle fenêtre qui s’ouvrira vous pouvez donner le titre que vous voulez à votre nouveau document puis sélectionner <code>Ok</code>.Par défault le nouveau document affiche une petite introduction ainsi que des exemples tel que sur l’image ci-dessous :</p>
 <p><img src="data/rmarkdown.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Ces informations ne sont pas pertinentes et vous pouvez supprimer l’ensemble du texte sous l’entête (l’entête correspond à la section délimitée par les trois tirets <code>---</code>).</p>
 <div id="bloc-de-codes" class="section level3 hasAnchor" number="5.1.1">
@@ -205,9 +205,9 @@ Par défault le nouveau document affiche une petite introduction ainsi que des e
 <p>Dans R markdown, les lignes de codes à exécuter doivent être comprises dans un bloc de code. Le texte non compris dans un bloc n’est donc pas considéré comme du code, ce qui permet d’annoter minutieusement votre script entre les blocs afin de vous y retrouver facilement.</p>
 <p>Un bloc de code R doit toujours débuter avec les caractères suivants : <code>```{r}</code>
 et se terminer avec les caractères suivant : <code>```</code>. Un bloc de code ressemble donc à ceci :</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="r-markdown.html#cb7-1" tabindex="-1"></a>```{r}</span>
-<span id="cb7-2"><a href="r-markdown.html#cb7-2" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="r-markdown.html#cb7-3" tabindex="-1"></a>``` </span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="r-markdown.html#cb9-1" tabindex="-1"></a>```{r}</span>
+<span id="cb9-2"><a href="r-markdown.html#cb9-2" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="r-markdown.html#cb9-3" tabindex="-1"></a>``` </span></code></pre></div>
 <p>Un bloc de code peut être inséré avec l’une des façons suivantes :</p>
 <ul>
 <li>le raccourcit clavier : <code>Ctrl</code> + <code>Alt</code> + <code>I</code></li>

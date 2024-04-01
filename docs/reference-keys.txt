@@ -4,6 +4,7 @@ quest-ce-que-r-et-rstudio
 composants-de-rstudio
 scripter-avec-rstudio
 créer-un-script
+exécuter-une-commande
 répertoire-de-travail
 utiliser-des-fonctions-r
 commentaires
