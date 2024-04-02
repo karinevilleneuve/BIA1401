@@ -22,6 +22,8 @@ Les noms des colonnes et leur contenu n’ont ni accent, ni d’espace, ni carac
 
 La touche `Tabulation` ou `Tab` permet de compléter automatiquement les noms d’objets/fonction. Çela accélère l’entrée des commandes et évite les erreurs de frappe.
 
+R est sensible à la casse, i.e. `A` est différent de `a`. 
+
 ## Créer un script 
 
 Lorsque vous lancez RStudio, le premier élément que vous voyez à gauche de l’écran correspond à la console. Pour créer un nouveau script vous devez cliquez sur l'icone de la page blanche avec le symbole `+` vert en haut à gauche complètement. Dans le menu déroulant sélectionner `R Script`. La section [R Markdown] aborde une différentes manière de rédiger ses scripts favorisant l'annotation et l'organisation du code en plus de l'exportation des scripts sous différents formats (PDF, HTML, etc.) pour le partage des scripts.
@@ -65,7 +67,7 @@ Exemple  :
 ```
 ## Commentaires 
 
-Le symbole "#" est utilisé insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole "#" lors de l’exécution de commandes. Considérant que les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes indiquant ce qui a été fait. Un script enrichi de commentaires est une excellente façon de collaborer à une science reproductible. 
+Le symbole `#` est utilisé pour insérer des commentaires au sein d’un script. Cela indique à R d’ignorer tout ce qui se trouve sur une ligne à la suite du symbole `#`  lors de l’exécution de commandes. Considérant que les commentaires sont ignorés par R lors de l’exécution de scripts, il est possible de se laisser des notes indiquant ce qui a été fait. Un script enrichi de commentaires est une excellente façon de collaborer à une science reproductible. 
 
 Exemple : 
 
@@ -76,16 +78,16 @@ getwd()
 
 ## Importer un taleau de données 
 
-Un tableau de données est une liste de vecteurs (de même taille) rangés colonne par colonne. Chaque colonne du tableau correspond à une variable, chaque ligne à une observation. Les variables peuvent être de type différent (numérique, booléen, character, ...). Sous R, les tableaux de données sont des objets particuliers appelés data.frame.
+Un tableau de données est une liste de vecteurs rangés colonne par colonne. Chaque colonne du tableau correspond à une variable, chaque ligne à une observation. Les variables peuvent être de différents types (numérique, booléen, character, ...). Sous R, les tableaux de données sont des objets particuliers appelés *data.frame*.
 
-En analayse de données, les fichiers sont typiquement enregistrer sous le format *Comma Seperated Value* (csv). CSV est un format de fichier de texte simple utilisé pour stocker les données tabulaires, comme des feuilles de calcul ou des bases de données. Chaque ligne d’un fichier CSV représente une ligne et les valeurs d’une ligne sont séparées par des virgules. C’est un format de fichier simple et largement pris en charge qui permet d’importer et d’exporter facilement des données entre différentes applications logicielles.
+En analyse de données, les fichiers sont typiquement enregistrer sous le format *Comma Seperated Value* (csv). CSV est un format de fichier de texte simple utilisé pour stocker les données tabulaires, comme des feuilles de calcul ou des bases de données. Chaque ligne d’un fichier CSV représente une ligne et les valeurs d’une ligne sont séparées par des virgules. C’est un format de fichier simple et largement pris en charge qui permet d’importer et d’exporter facilement des données entre différentes applications logicielles.
 
 Pour importer ce type de fichier dans R on peut utiliser la fonction `read.csv`. Les arguments fréquemments utilisés pour cette fonction sont les suivants : 
 
 - `file` : Spécifier le nom du fichier (inclure l'extension)
 - `header` : Indiquer si la première ligne de notre tableau correspond au nom des colonnes (valeurs possibles TRUE/FALSE)
-- `row.names` : Indiquer quelle colone de notre tableau correspond au nom des rangés (valeurs possible = le numéro de la colonne)
-- `sep` : Indiquer quel caractère doit servir de séparateur pour les colonnes (il peut arriver que d'autre symbole tels que le point-virgule servent de séparateur plutôt que la virgule)
+- `row.names` : Indiquer quelle colonne de notre tableau correspond au nom des rangés (valeurs possible = numérique correspondant au numéro de la colonne)
+- `sep` : Spécifier quel caractère doit servir de séparateur pour les colonnes (il peut arriver que d'autre symbole tels que le point-virgule servent de séparateur plutôt que la virgule)
 - `check.name` : Ne pas systématiquement remplacer le trait d'union par un point (valeurs possible TRUE/FALSE)
 
 Exemple : 
