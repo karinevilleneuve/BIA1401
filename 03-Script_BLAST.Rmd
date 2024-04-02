@@ -2,14 +2,12 @@
 
 En traitement de données, les tableaux de données dans lequel vous cherchez certaines informations peuvent comporter des milliers de lignes et plusieurs centaines de colonnes. Considérant la taille de ces fichiers, l'utilisation d'Excel n'est généralement pas possible. C'est donc pour cela que les analystes font appel à R. 
 
-Pour trouver vos séquences commencer par télécharger le fichier `séquences_inconnus.csv` et l'enregistrer dans le dossier `Documents`. Si vous enregistrer le document dans un autre dossier il vous faudra changer de répertoire de travail avec la fonction `setwd()`. 
+Pour trouver vos séquences commencer par télécharger le fichier `sequences_inconnus.csv` et l'enregistrer dans le dossier `Documents`. Si vous enregistrer le document dans un autre dossier il vous faudra changer de répertoire de travail avec la fonction `setwd()`. 
 
 ```{r, eval = FALSE}
 # Importer le fichier dans R 
 raw_df = read.csv("sequences_inconnus.csv", header = TRUE, sep = ",", check.name = FALSE)
 ```
-
-raw_df = read.csv("/Users/karinevilleneuve/OneDrive - UQAM/DOCTORAT/Cours_Demo/2024_BIA1410/sequences_inconnus.csv", header = TRUE, sep = ",", check.name = FALSE)
 
 Vous devriez maintenant voir dans l'encadré `Environnement` l'objet `raw_df  31 obs. of 7 variable` sous le titre `Data` (coin supérieur droit). Basée sur ces informations vous pouvez déduire qu'il s'agit d'un tableau de données comportant 31 lignes et 7 colones.  
 
