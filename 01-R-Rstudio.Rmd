@@ -12,7 +12,7 @@ R est de plus en plus utilisé dans les domaines de la sciences des données mas
 - Il est facile de développer vos propres fonctions (automatisation).
 - Il possède une très grande communauté d'utilisateurs et de développeurs (beaucoup de librairies, aide, etc.).
 
-**RStudio** est, quant à lui, un environnement de développement intégré (*Integrated Development Environment*, IDE) qui permet de travailler non seulement en R mais aussi en d'autres languages de programmation comme Bash et Python. En programmation informatique, un IDE est est un logiciel de création d'applications qui rassemble des outils de développement fréquemment utilisés dans une seule <span style="text-decoration:underline">interface utilisateur graphique</span> (*Graphical User Interface*, GUI). L'interface graphique convivales de l'IDE facilite l’écriture de scripts et l’usage de R au quotidien.
+**RStudio** est, quant à lui, un environnement de développement intégré (*Integrated Development Environment*, IDE) qui permet de travailler non seulement en R mais aussi en d'autres languages de programmation comme Bash et Python. En programmation informatique, un IDE est un logiciel de création d'applications qui rassemble des outils de développement fréquemment utilisés dans une seule <span style="text-decoration:underline">interface utilisateur graphique</span> (*Graphical User Interface*, GUI). L'interface graphique conviviale de l'IDE facilite l’écriture de scripts et l’usage de R au quotidien.
 
 **En d'autre termes, voici "l'histoire évolutive" d'un système de base (console R), vers l'utilisation de script et ultimement le recours à un IDE :**   
 
@@ -39,7 +39,7 @@ L'interface RStudio inclut :
 - un **éditeur de code** (Source),
 - une **console** (Console) et **terminal** (Terminal),
 - un **gestionnaire de fichier** (Files),
-- une **sorties graphiques** (Plots),
+- une **sortie graphique** (Plots),
 - le **gestionnaire de paquets** (Pkgs),
 - une **aide en ligne** (Help),
 - le contenu de l'**espace de travail** (Environment),
