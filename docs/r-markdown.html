@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapitre 5 R Markdown | BIA1401 - 2024 - Introduction à R</title>
-  <meta name="description" content="Chapitre 5 R Markdown | BIA1401 - 2024 - Introduction à R" />
-  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+  <title>Chapitre 5 R Markdown | BIA1401 2026 - Introduction à R</title>
+  <meta name="description" content="Chapitre 5 R Markdown | BIA1401 2026 - Introduction à R" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 5 R Markdown | BIA1401 - 2024 - Introduction à R" />
+  <meta property="og:title" content="Chapitre 5 R Markdown | BIA1401 2026 - Introduction à R" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 5 R Markdown | BIA1401 - 2024 - Introduction à R" />
+  <meta name="twitter:title" content="Chapitre 5 R Markdown | BIA1401 2026 - Introduction à R" />
   
   
   
@@ -29,7 +29,7 @@
   
   
 <link rel="prev" href="script-pour-blast.html"/>
-<link rel="next" href="installer-r-et-rstudio.html"/>
+<link rel="next" href="installer-r-et-rstudio-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -47,12 +47,14 @@
 
 
 
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -135,37 +137,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">BIA1401-2024</a></li>
+<li><a href="./">BIA1401-2026</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#introduction-1"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#installer-r-et-rstudio"><i class="fa fa-check"></i><b>1.2</b> Installer R et RStudio</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#r%C3%A9f%C3%A9rences-et-liens-utiles"><i class="fa fa-check"></i><b>1.3</b> Références et liens utiles</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html"><i class="fa fa-check"></i><b>2</b> Introduction à R et RStudio</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html#quest-ce-que-r-et-rstudio"><i class="fa fa-check"></i><b>2.1</b> Qu’est-ce que R et Rstudio</a></li>
 <li class="chapter" data-level="2.2" data-path="introduction-à-r-et-rstudio.html"><a href="introduction-à-r-et-rstudio.html#composants-de-rstudio"><i class="fa fa-check"></i><b>2.2</b> Composants de RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html"><i class="fa fa-check"></i><b>3</b> Scripter avec RStudio</a>
+<li class="chapter" data-level="3" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html"><i class="fa fa-check"></i><b>3</b> Utiliser RStudio et R Mardown</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#créer-un-script"><i class="fa fa-check"></i><b>3.1</b> Créer un script</a></li>
-<li class="chapter" data-level="3.2" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#exécuter-une-commande"><i class="fa fa-check"></i><b>3.2</b> Exécuter une commande</a></li>
-<li class="chapter" data-level="3.3" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#répertoire-de-travail"><i class="fa fa-check"></i><b>3.3</b> Répertoire de travail</a></li>
-<li class="chapter" data-level="3.4" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#utiliser-des-fonctions-r"><i class="fa fa-check"></i><b>3.4</b> Utiliser des fonctions R</a></li>
-<li class="chapter" data-level="3.5" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#commentaires"><i class="fa fa-check"></i><b>3.5</b> Commentaires</a></li>
-<li class="chapter" data-level="3.6" data-path="scripter-avec-rstudio.html"><a href="scripter-avec-rstudio.html#importer-un-taleau-de-données"><i class="fa fa-check"></i><b>3.6</b> Importer un taleau de données</a></li>
+<li class="chapter" data-level="3.1" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#pourquoi-utiliser-r-markdown"><i class="fa fa-check"></i><b>3.1</b> Pourquoi utiliser R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#utliser-r-markdowm"><i class="fa fa-check"></i><b>3.2</b> Utliser R Markdowm</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#bloc-de-codes"><i class="fa fa-check"></i><b>3.2.1</b> Bloc de codes</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#exemples-utiles-de-commandes-r"><i class="fa fa-check"></i><b>3.3</b> Exemples utiles de commandes R</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#d%C3%A9finir-le-r%C3%A9pertoire-de-travail-par-d%C3%A9faut"><i class="fa fa-check"></i><b>3.3.1</b> Définir le répertoire de travail par défaut</a></li>
+<li class="chapter" data-level="3.3.2" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#importer-des-donn%C3%A9es"><i class="fa fa-check"></i><b>3.3.2</b> Importer des données</a></li>
+<li class="chapter" data-level="3.3.3" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#manipulation-de-variables-et-types-de-donn%C3%A9es"><i class="fa fa-check"></i><b>3.3.3</b> Manipulation de variables et types de données</a></li>
+<li class="chapter" data-level="3.3.4" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#structures-des-donn%C3%A9es"><i class="fa fa-check"></i><b>3.3.4</b> Structures des données</a></li>
+<li class="chapter" data-level="3.3.5" data-path="utiliser-rstudio-et-r-mardown.html"><a href="utiliser-rstudio-et-r-mardown.html#exploration-de-donn%C3%A9es"><i class="fa fa-check"></i><b>3.3.5</b> Exploration de données</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="script-pour-blast.html"><a href="script-pour-blast.html"><i class="fa fa-check"></i><b>4</b> Script pour BLAST</a></li>
 <li class="chapter" data-level="5" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>5</b> R Markdown</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="r-markdown.html"><a href="r-markdown.html#utliser-r-markdowm"><i class="fa fa-check"></i><b>5.1</b> Utliser R Markdowm</a>
+<li class="chapter" data-level="5.1" data-path="r-markdown.html"><a href="r-markdown.html#utliser-r-markdowm-1"><i class="fa fa-check"></i><b>5.1</b> Utliser R Markdowm</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="r-markdown.html"><a href="r-markdown.html#bloc-de-codes"><i class="fa fa-check"></i><b>5.1.1</b> Bloc de codes</a></li>
+<li class="chapter" data-level="5.1.1" data-path="r-markdown.html"><a href="r-markdown.html#bloc-de-codes-1"><i class="fa fa-check"></i><b>5.1.1</b> Bloc de codes</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="installer-r-et-rstudio.html"><a href="installer-r-et-rstudio.html"><i class="fa fa-check"></i><b>6</b> Installer R et RStudio</a></li>
-<li class="chapter" data-level="7" data-path="références-et-liens-utiles.html"><a href="références-et-liens-utiles.html"><i class="fa fa-check"></i><b>7</b> Références et liens utiles</a></li>
-<li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
+<li class="chapter" data-level="6" data-path="installer-r-et-rstudio-1.html"><a href="installer-r-et-rstudio-1.html"><i class="fa fa-check"></i><b>6</b> Installer R et RStudio</a></li>
+<li class="chapter" data-level="7" data-path="références-et-liens-utiles-1.html"><a href="références-et-liens-utiles-1.html"><i class="fa fa-check"></i><b>7</b> Références et liens utiles</a></li>
 </ul>
 
       </nav>
@@ -175,7 +186,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIA1401 - 2024 - Introduction à R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIA1401 2026 - Introduction à R</a>
           </h1>
         </div>
 
@@ -194,20 +205,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><p>Mais aussi, les blocs de codes permettent d’exécuter seulement certaines sections de code à la fois, ce qui ultimement permet de mofidier puis exécuter seulement ces sections de code sans avoir à re-exécuter l’entièreté du script.</p></li>
 </ul>
-<div id="utliser-r-markdowm" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Utliser R Markdowm<a href="r-markdown.html#utliser-r-markdowm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="utliser-r-markdowm-1" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Utliser R Markdowm<a href="r-markdown.html#utliser-r-markdowm-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Pour créer un fichier de type R Markdown sélectionner ce type de fichier plutôt que R Script dans le menu déroulant pour créer un nouveau fichier.</p>
 <p>Dans la nouvelle fenêtre qui s’ouvrira vous pouvez donner le titre que vous voulez à votre nouveau document puis sélectionner <code>Ok</code>.Par défault le nouveau document affiche une petite introduction ainsi que des exemples tel que sur l’image ci-dessous :</p>
-<p><img src="data/rmarkdown.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="data/rmarkdown.png" alt="" width="100%" style="display: block; margin: auto;" /></p>
 <p>Ces informations ne sont pas pertinentes et vous pouvez supprimer l’ensemble du texte sous l’entête (l’entête correspond à la section délimitée par les trois tirets <code>---</code>).</p>
-<div id="bloc-de-codes" class="section level3 hasAnchor" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Bloc de codes<a href="r-markdown.html#bloc-de-codes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="bloc-de-codes-1" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Bloc de codes<a href="r-markdown.html#bloc-de-codes-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Dans R markdown, les lignes de codes à exécuter doivent être comprises dans un bloc de code. Le texte non compris dans un bloc n’est donc pas considéré comme du code, ce qui permet d’annoter minutieusement votre script entre les blocs afin de vous y retrouver facilement.</p>
 <p>Un bloc de code R doit toujours débuter avec les caractères suivants : <code>```{r}</code>
 et se terminer avec les caractères suivant : <code>```</code>. Un bloc de code ressemble donc à ceci :</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="r-markdown.html#cb9-1" tabindex="-1"></a>```{r}</span>
-<span id="cb9-2"><a href="r-markdown.html#cb9-2" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="r-markdown.html#cb9-3" tabindex="-1"></a>``` </span></code></pre></div>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="r-markdown.html#cb17-1" tabindex="-1"></a>```{r}</span>
+<span id="cb17-2"><a href="r-markdown.html#cb17-2" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="r-markdown.html#cb17-3" tabindex="-1"></a>``` </span></code></pre></div>
+</details>
 <p>Un bloc de code peut être inséré avec l’une des façons suivantes :</p>
 <ul>
 <li>le raccourcit clavier : <code>Ctrl</code> + <code>Alt</code> + <code>I</code></li>
@@ -228,7 +241,7 @@ et se terminer avec les caractères suivant : <code>```</code>. Un bloc de code 
         </div>
       </div>
 <a href="script-pour-blast.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="installer-r-et-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="installer-r-et-rstudio-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -242,42 +255,42 @@ et se terminer avec les caractères suivant : <code>```</code>. Un bloc de code 
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-RMarkdown.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/rstudio/bookdown-demo/edit/master/04-RMarkdown.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
